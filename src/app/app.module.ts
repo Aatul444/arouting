@@ -11,8 +11,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { ChildComponent } from './components/child/child.component';
-import { ParentComponent } from './components/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,6 @@ import { ParentComponent } from './components/parent/parent.component';
     SidebarComponent,
     HeaderComponent,
     FooterComponent,
-    ChildComponent,
-    ParentComponent,
   ],
   imports: [FormsModule, BrowserModule, AppRoutingModule],
   providers: [],
