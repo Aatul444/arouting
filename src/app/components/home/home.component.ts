@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  firstName: string | undefined;
+  // firstName: string | undefined;
   // constructor(private firstName: string) {
   //   this.firstName = '';
   // }
 
-  // ngOnInit(): void {}
+  ngOnInit(): void {}
+  message: string = 'Hola monda';
+  @Output() messageEvent = new EventEmitter<string>();
+  constructor() {}
+  sendmessage() {
+    this.messageEvent.emit(this.message);
+  }
 }
