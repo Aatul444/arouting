@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding-top: 30px;
+  border: 1px solid black;
+}
+
+.middle {
+  /* align-self: stretch;
+  width: 20%; */
+  display: flex;
+}
+.sideBar {
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: 50px;
+}
+.routeContent {
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 5%;
+}
+/* footer {
+  min-height: 50px;
+  background: PapayaWhip;
+} */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
