@@ -9,4 +9,5 @@ export class ParentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  transferData(name:any){}
 }
